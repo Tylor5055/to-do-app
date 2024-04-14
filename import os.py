@@ -55,3 +55,42 @@ def main():
 
 if __name__ == "__main__":
     main()
+class Task:
+    def __init__(self, description, priority):
+        self.description = description
+        self.priority = priority
+
+class TodoList:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, task):
+        self.tasks.append(task)
+
+    # Other methods...
+
+    def display_tasks(self):
+        if self.tasks:
+            print("To-Do List:")
+            for i, task in enumerate(self.tasks):
+                print(f"{i + 1}. Priority: {task.priority}, {task.description}")
+        else:
+            print("Your to-do list is empty.")
+
+# Usage:
+task = Task("Complete project", "High")
+todo_list.add_task(task)
+class Task:
+    def __init__(self, description, due_date):
+        self.description = description
+        self.due_date = due_date
+
+# Usage:
+task = Task("Complete project", "2024-04-30")
+class Task:
+    def __init__(self, description, category):
+        self.description = description
+        self.category = category
+
+# Usage:
+task = Task("Buy groceries", "Personal")
